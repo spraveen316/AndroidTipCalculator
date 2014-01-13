@@ -1,8 +1,8 @@
 package com.project.androidtipcalculator;
 
-import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
+import android.os.Bundle;
+import android.view.View;
 
 public class TipCalculateActivity extends Activity {
 
@@ -12,11 +12,9 @@ public class TipCalculateActivity extends Activity {
 		setContentView(R.layout.activity_tip_calculate);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.tip_calculate, menu);
-		return true;
+	public void onAddItem(View v) {
+		// TODO Auto-generated method stub
+		//Toast.makeText(getBaseContext(), R.string.addingItemText, Toast.LENGTH_SHORT).show();
 	}
 
 }
