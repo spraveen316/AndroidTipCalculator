@@ -8,9 +8,70 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".TipCalculateActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:focusable="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:inputType="numberDecimal"
+        android:ems="10">
+        
+        <requestFocus />
+ 	</EditText>
+
+    <Button
+        android:id="@+id/b10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etBillAmount"
+        android:layout_below="@+id/etBillAmount"
+        android:onClick="onButtonClick"
+        android:layout_marginTop="48dp"
+        android:text="@string/tenPercent" />
+    
+    <Button
+        android:id="@+id/b15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b10"
+        android:layout_alignBottom="@+id/b10"
+        android:onClick="onButtonClick"
+        android:layout_toRightOf="@+id/b10"
+        android:text="@string/fifteenPercent" />
+
+    <Button
+        android:id="@+id/b20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b15"
+        android:layout_alignBottom="@+id/b15"
+        android:onClick="onButtonClick"
+        android:layout_toRightOf="@+id/b15"
+        android:text="@string/twentyPercent" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="74dp"
+        android:layout_toLeftOf="@+id/b15"
+       android:text="@string/tipText" />
+
+    <EditText
+        android:id="@+id/eTTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTip"
+        android:layout_alignBottom="@+id/tvTip"
+        android:layout_alignLeft="@+id/b20"
+        android:layout_alignParentRight="true"
+        android:inputType="none"
+        android:ems="10" >
+
+    </EditText>
 
 </RelativeLayout>
