@@ -67,11 +67,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tvTip"
         android:layout_alignBottom="@+id/tvTip"
-        android:layout_alignLeft="@+id/b20"
-        android:layout_alignParentRight="true"
-        android:inputType="none"
-        android:ems="10" >
-
-    </EditText>
+        android:layout_alignLeft="@+id/b15"
+        android:layout_alignRight="@+id/b20"
+        android:ems="10"
+        android:inputType="none" />
 
 </RelativeLayout>
